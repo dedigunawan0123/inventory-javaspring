@@ -14,14 +14,13 @@
 <body>
 <div class="container">
 	<header>
-   		<h1>Spring MVC + JSP + JPA + Spring Boot 2</h1>
+   		<!--  <h1>Spring MVC + JSP + JPA + Spring Boot 2</h1> -->
   	</header>
   	<div class="starter-template">
    		<h1>Barangs List</h1>
    		<table class="table table-striped table-hover table-condensed table-bordered">
     	<tr>
      		<th>No</th>
-     		<th>ID Supplier</th>
      		<th>Kode Barang</th>
      		<th>Nama Barang</th>
      		<th>Harga Barang</th>
@@ -33,7 +32,6 @@
     	<c:forEach var="barang" items="${barangs}" varStatus="loop">
      	<tr>
       		<td>${loop.count}</td>
-      		<td>${barang.id_supplier}</td>
       		<td>${barang.kode_barang}</td>
       		<td>${barang.nama_barang}</td>
       		<td>${barang.harga_barang}</td>
@@ -45,6 +43,7 @@
     	</c:forEach>
    		</table>
   	</div>
+  	<a type="button" class="btn btn-info" href="/">Menu Utama</a>
 </div>
 <script type="text/javascript" src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>

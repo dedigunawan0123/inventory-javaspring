@@ -25,16 +25,6 @@
     				<form:form method="post" modelAttribute="barang">
     				<form:hidden path="id" />
     				<div class="form-group col-md-3 col-xs-12">
-    					<form:label path="id_supplier">ID Supplier</form:label>
-    					<div class="input-group">
-    						<span class="input-group-addon">
-    							<i class="fa fa-clone"></i>
-    						</span>
-    						<form:input path="id_supplier" type="text" class="form-control" required="required" />
-    					</div>
-    					<form:errors path="id_supplier" cssClass="text-warning" />
-    				</div>
-    				<div class="form-group col-md-3 col-xs-12">
     					<form:label path="kode_barang">Kode Barang</form:label>
     					<div class="input-group">
     						<span class="input-group-addon">

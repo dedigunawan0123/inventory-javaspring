@@ -13,7 +13,6 @@ public class Barang {
     @Id 
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
-    private Integer id_supplier;
     private String kode_barang;
     private String nama_barang;
     private Double harga_barang;
@@ -24,11 +23,10 @@ public class Barang {
 	}
 
 
-	public Barang(Integer id, Integer id_supplier, String kode_barang, String nama_barang, Double harga_barang,
+	public Barang(Integer id, String kode_barang, String nama_barang, Double harga_barang,
 			Integer stok_barang) {
 		super();
 		this.id = id;
-		this.id_supplier = id_supplier;
 		this.kode_barang = kode_barang;
 		this.nama_barang = nama_barang;
 		this.harga_barang = harga_barang;
@@ -44,17 +42,6 @@ public class Barang {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-
-
-	public Integer getId_supplier() {
-		return id_supplier;
-	}
-
-
-	public void setId_supplier(Integer id_supplier) {
-		this.id_supplier = id_supplier;
-	}
-
 
 	public String getKode_barang() {
 		return kode_barang;
